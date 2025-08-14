@@ -1,0 +1,1 @@
+export function bearingToText(deg){ const dirs=['N','NE','E','SE','S','SO','O','NO']; let d=(deg%360+360)%360; return `${Math.round(d)}° ${dirs[Math.round(d/45)%8]}`; }
